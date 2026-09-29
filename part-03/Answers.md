@@ -1,21 +1,18 @@
-# Part 03 — student answers
-
-Short answers only.
+# Part 03 — answers
 
 ---
 
-## A) Blocked users
+## BlockedUsers
 
-- Time complexity **before**:
-- Measured time before (ms):
+- Time complexity before:
+- Time (ms) before:
 - What did you change?
-- Time complexity **after**:
-- Measured time after (ms):
+- Time complexity after:
+- Time (ms) after:
 
 ---
 
-## B) Students — 1,000,000 records
+## Students
 
-- What was wrong with `GetAllStudents` + early `break`?
+- What was the problem?
 - What did you change?
-- Confirm: with early stop, items after the stop are not generated (yes/no):

@@ -1,36 +1,30 @@
-# Refactoring — student answers
-
-Fill this after you refactor. Keep each answer short.
+# Part 01 — answers
 
 ---
 
-## 1) `ShippingCostCalculator`
+## ShippingCostCalculator
 
-- Violated principle:
-- What change would have forced edits before?
-- How does your fix prevent that?
-
----
-
-## 2) `OrderProcessor` (+ `SqlOrderRepository` / `SmtpEmailSender`)
-
-- Violated principle:
-- What change would have forced edits before?
-- How does your fix prevent that?
-- What did you do about `DateTime.Now`?
+- What was the problem?
+- What did you change?
 
 ---
 
-## 3) Notification hierarchy (`EmailNotification`, `Urgent…`, `UrgentScheduled…`)
+## OrderProcessor
 
-- Violated principle / design smell:
-- What change would have forced edits (or new subclasses) before?
-- How does composition fix that?
+- What was the problem?
+- What did you change?
 
 ---
 
-## 4) Proof task
+## Notifications
 
-- New carrier name + file(s) added:
-- New notification channel name + file(s) added:
-- Confirm: you did **not** edit existing classes to add them (yes/no):
+- What was the problem?
+- What did you change?
+
+---
+
+## Proof
+
+- New carrier file(s):
+- New notification channel file(s):
+- Existing classes left unchanged? (yes/no):

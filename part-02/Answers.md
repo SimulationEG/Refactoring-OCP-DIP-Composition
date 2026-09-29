@@ -1,18 +1,17 @@
-# Part 02 — student answers
-
-Short answers only.
+# Part 02 — answers
 
 ---
 
-## A) Reports
+## Reports
 
-- What did you extract into the abstract base class?
-- Why is an abstract class better than an interface here?
+- What was the problem?
+- What did you change?
+- Why did you choose that approach?
 
 ---
 
-## B) Enrollment
+## Enrollment
 
-- Entry type name + constructor dependencies:
-- Which design pattern / type did you use?
-- How does constructor injection help?
+- What was the problem?
+- What did you change?
+- Why did you choose that approach?
