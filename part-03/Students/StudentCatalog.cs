@@ -1,4 +1,4 @@
-namespace RefactoringLab.Part03.Yield;
+namespace RefactoringLab.Part03.Students;
 
 public class Student
 {

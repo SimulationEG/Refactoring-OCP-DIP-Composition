@@ -1,4 +1,4 @@
-# Part 03 — List search · Yield
+# Part 03 — Performance · Large data
 
 Refactor the starters below. Fill `Answers.md`.
 
@@ -9,9 +9,9 @@ cd part-03
 dotnet run
 ```
 
-## A) List search
+## A) Blocked users
 
-Code: `ListSearch/BlockedUserChecker.cs`
+Code: `BlockedUsers/BlockedUserChecker.cs`
 
 **Task:**
 
@@ -22,11 +22,11 @@ Code: `ListSearch/BlockedUserChecker.cs`
 
 ---
 
-## B) Yield — 1,000,000 students
+## B) Students — 1,000,000 records
 
-Code: `Yield/StudentCatalog.cs` + the loop in `Program.cs`
+Code: `Students/StudentCatalog.cs` + the loop in `Program.cs`
 
-**Task:** Refactor so generating / walking 1,000,000 students does not force building the full list when the caller stops early. Use **yield**.
+**Task:** Refactor so generating / walking 1,000,000 students does not force building the full list when the caller stops early.
 
 ---
 

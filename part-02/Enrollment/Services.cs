@@ -1,4 +1,4 @@
-namespace RefactoringLab.Part02.Facade;
+namespace RefactoringLab.Part02.Enrollment;
 
 public class PaymentGateway
 {

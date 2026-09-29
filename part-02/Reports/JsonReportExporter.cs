@@ -1,6 +1,6 @@
-namespace RefactoringLab.Part02.TemplateMethod;
+namespace RefactoringLab.Part02.Reports;
 
-public class CsvReportExporter
+public class JsonReportExporter
 {
     public void Export(string path)
     {
@@ -21,8 +21,11 @@ public class CsvReportExporter
     private bool Validate(List<string[]> rows) =>
         rows.Count > 1 && rows[0].Length > 0;
 
-    private string Format(List<string[]> rows) =>
-        string.Join(Environment.NewLine, rows.Select(r => string.Join(",", r)));
+    private string Format(List<string[]> rows)
+    {
+        var items = rows.Skip(1).Select(r => $"{{\"Id\":\"{r[0]}\",\"Name\":\"{r[1]}\"}}");
+        return "[" + string.Join(",", items) + "]";
+    }
 
     private void Save(string path, string content) =>
         File.WriteAllText(path, content);

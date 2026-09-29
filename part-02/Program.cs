@@ -1,7 +1,7 @@
-using RefactoringLab.Part02.Facade;
-using RefactoringLab.Part02.TemplateMethod;
+using RefactoringLab.Part02.Enrollment;
+using RefactoringLab.Part02.Reports;
 
-Console.WriteLine("=== Template Method starter ===");
+Console.WriteLine("=== Reports ===");
 var outDir = Path.Combine(Path.GetTempPath(), "refactoring-lab-part02");
 Directory.CreateDirectory(outDir);
 
@@ -11,7 +11,7 @@ new TextReportExporter().Export(Path.Combine(outDir, "report.txt"));
 Console.WriteLine($"Wrote reports to {outDir}");
 Console.WriteLine();
 
-Console.WriteLine("=== Facade starter ===");
+Console.WriteLine("=== Enrollment ===");
 var studentId = "S100";
 var courseId = "CS201";
 var amount = 1500m;

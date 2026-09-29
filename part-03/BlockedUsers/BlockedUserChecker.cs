@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace RefactoringLab.Part03.ListSearch;
+namespace RefactoringLab.Part03.BlockedUsers;
 
 public static class BlockedUserChecker
 {

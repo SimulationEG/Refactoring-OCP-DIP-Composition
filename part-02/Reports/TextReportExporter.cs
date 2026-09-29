@@ -1,6 +1,6 @@
-namespace RefactoringLab.Part02.TemplateMethod;
+namespace RefactoringLab.Part02.Reports;
 
-public class JsonReportExporter
+public class TextReportExporter
 {
     public void Export(string path)
     {
@@ -21,11 +21,8 @@ public class JsonReportExporter
     private bool Validate(List<string[]> rows) =>
         rows.Count > 1 && rows[0].Length > 0;
 
-    private string Format(List<string[]> rows)
-    {
-        var items = rows.Skip(1).Select(r => $"{{\"Id\":\"{r[0]}\",\"Name\":\"{r[1]}\"}}");
-        return "[" + string.Join(",", items) + "]";
-    }
+    private string Format(List<string[]> rows) =>
+        string.Join(Environment.NewLine, rows.Select(r => string.Join(" | ", r)));
 
     private void Save(string path, string content) =>
         File.WriteAllText(path, content);

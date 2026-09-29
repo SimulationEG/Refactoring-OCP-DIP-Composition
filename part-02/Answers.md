@@ -4,15 +4,15 @@ Short answers only.
 
 ---
 
-## A) Template Method
+## A) Reports
 
 - What did you extract into the abstract base class?
 - Why is an abstract class better than an interface here?
 
 ---
 
-## B) Facade
+## B) Enrollment
 
-- Facade class name + constructor dependencies:
-- What type of Facade did you implement?
-- How does constructor injection help (DIP)?
+- Entry type name + constructor dependencies:
+- Which design pattern / type did you use?
+- How does constructor injection help?

@@ -1,6 +1,6 @@
-namespace RefactoringLab.Part02.TemplateMethod;
+namespace RefactoringLab.Part02.Reports;
 
-public class TextReportExporter
+public class CsvReportExporter
 {
     public void Export(string path)
     {
@@ -22,7 +22,7 @@ public class TextReportExporter
         rows.Count > 1 && rows[0].Length > 0;
 
     private string Format(List<string[]> rows) =>
-        string.Join(Environment.NewLine, rows.Select(r => string.Join(" | ", r)));
+        string.Join(Environment.NewLine, rows.Select(r => string.Join(",", r)));
 
     private void Save(string path, string content) =>
         File.WriteAllText(path, content);

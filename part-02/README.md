@@ -1,4 +1,4 @@
-# Part 02 — Template Method · Facade
+# Part 02 — Reports · Enrollment
 
 Implement the refactors below. Fill `Answers.md`.
 
@@ -9,9 +9,9 @@ cd part-02
 dotnet run
 ```
 
-## A) Template Method
+## A) Reports
 
-Code: `TemplateMethod/CsvReportExporter.cs`, `JsonReportExporter.cs`, `TextReportExporter.cs`
+Code: `Reports/CsvReportExporter.cs`, `JsonReportExporter.cs`, `TextReportExporter.cs`
 
 **Task:** Refactor the duplicated export flow into an abstract base class.
 
@@ -25,19 +25,18 @@ Requirements:
 
 ---
 
-## B) Facade
+## B) Enrollment
 
-Code: `Facade/Services.cs` + the enrollment calls in `Program.cs`
+Code: `Enrollment/Services.cs` + the enrollment calls in `Program.cs`
 
-**Task:** Refactor the enrollment flow to use the **Facade** design pattern (`EnrollmentFacade`).
+**Task:** Refactor the enrollment flow so callers do not wire `PaymentGateway`, `SeatInventory`, `InvoiceGenerator`, and `EmailService` themselves.
 
 Requirements:
 
-- Hide `PaymentGateway`, `SeatInventory`, `InvoiceGenerator`, and `EmailService` behind the facade
-- Call them in the correct order from one place
-- Pass dependencies through the facade **constructor** (DIP)
+- One entry type that runs the flow in the correct order
+- Pass dependencies through the constructor
 
-**Written question:** What type of Facade did you implement? (brief)
+**Written question:** Which design pattern did you use, and what type/variant is it? (brief)
 
 ---
 

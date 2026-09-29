@@ -4,7 +4,7 @@ Short answers only.
 
 ---
 
-## A) List search
+## A) Blocked users
 
 - Time complexity **before**:
 - Measured time before (ms):
@@ -14,8 +14,8 @@ Short answers only.
 
 ---
 
-## B) Yield — 1,000,000 students
+## B) Students — 1,000,000 records
 
 - What was wrong with `GetAllStudents` + early `break`?
-- How did yield change that?
+- What did you change?
 - Confirm: with early stop, items after the stop are not generated (yes/no):

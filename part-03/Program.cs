@@ -1,7 +1,7 @@
-using RefactoringLab.Part03.ListSearch;
-using RefactoringLab.Part03.Yield;
+using RefactoringLab.Part03.BlockedUsers;
+using RefactoringLab.Part03.Students;
 
-Console.WriteLine("=== List search ===");
+Console.WriteLine("=== Blocked users ===");
 const int blockedCount = 50_000;
 const int requestCount = 5_000;
 var blockedIds = BlockedUserChecker.BuildBlockedIds(blockedCount);
