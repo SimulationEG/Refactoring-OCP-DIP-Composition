@@ -1,6 +1,5 @@
 namespace RefactoringLab;
 
-/// <summary>OCP break: every new carrier forces editing this switch.</summary>
 public class ShippingCostCalculator
 {
     public decimal Calculate(string carrier, decimal weightKg)

@@ -1,6 +1,6 @@
 # Refactoring Lab — OCP · DIP · Composition over Inheritance
 
-Starter with **3 broken areas**. Refactor the code. Do not expand this README into notes.
+Refactor the starter. Do not expand this README into notes.
 
 ## Run
 
@@ -8,13 +8,11 @@ Starter with **3 broken areas**. Refactor the code. Do not expand this README in
 dotnet run
 ```
 
-## Broken code
+## Code
 
-| File | Smell |
-|------|--------|
-| `src/ShippingCostCalculator.cs` | `switch` on carrier |
-| `src/OrderProcessor.cs` | `new` concrete deps + `DateTime.Now` |
-| `src/Notifications.cs` | inheritance explosion (`UrgentScheduled…`) |
+- `src/ShippingCostCalculator.cs`
+- `src/OrderProcessor.cs`
+- `src/Notifications.cs`
 
 ## Proof task (required)
 

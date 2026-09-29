@@ -1,6 +1,5 @@
 namespace RefactoringLab;
 
-/// <summary>DIP break: news concrete deps + DateTime.Now hard-coded.</summary>
 public class OrderProcessor
 {
     public void Process(int orderId, string customerEmail)

@@ -1,8 +1,5 @@
 namespace RefactoringLab;
 
-/// <summary>
-/// Composition break: inheritance explosion for every channel × urgency × schedule combo.
-/// </summary>
 public class Notification
 {
     public virtual void Send(string to, string message) =>
